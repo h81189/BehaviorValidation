@@ -1,0 +1,30 @@
+# Folder path of data location
+data_path: './results/datasets/'
+
+# Output folder of all plots
+out_path: './results/NTU60/'
+
+# File path of skeletal specifications
+skeleton_path: './skeletons.py'
+
+spineM: 1
+spineF: 20
+
+# Key of skeleton in the skeletons file
+skeleton_name: 'NTUhuman'
+
+label: 'fitsne'
+downsample: 10
+
+# Parameters for t-SNE embedding
+single_embed:
+  method: 'fitsne'
+  perplexity: 50
+  lr: 'auto'
+  sigma: 15
+
+# Parameters for embedding new data into an existing t-SNE embedding
+transform_embed: 
+  method: 'knn'
+  k: 5
+  sigma: 15
